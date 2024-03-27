@@ -1,0 +1,50 @@
+<!--    My Project no. #2    -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Progress Bar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="progress-bar">
+                <p id="percentage">100%</p>
+                <svg width="200" height="200">
+                    <defs>
+                        <linearGradient id="my-gradient" x1="0%" x2="100%" y1="100%" y2="0%">
+                            <stop offset="0%" stop-color="gold" />
+                            <stop offset="100%" stop-color="red" />
+                        </linearGradient>
+                    </defs>
+                    <circle id="progress-circle" cx="100" cy="100" r="85"></circle>
+                </svg>
+            </div>
+            
+            <input type="number" placeholder="Percentage">
+            <button onclick="update()">Update</button>
+            
+            <!-- This part only for tutorial link -->
+            <div id="tutorial">
+                <a href="https://codecraftworld.blogspot.com/2024/03/creating-dynamic-progress-bar-with-html.html">Tutorial</a>
+            </div>
+            
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
